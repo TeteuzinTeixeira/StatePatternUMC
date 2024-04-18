@@ -11,4 +11,9 @@ class EstadoConcretoInconsistente : Estado
     {
         Console.WriteLine("EstadoConcretoInconsistente capta a segunda requisição");
     }
+    
+    public override void Handle3()
+    {
+        Console.WriteLine("EstadoConcretoInconsistente capta a terceira requisição");
+    }
 }

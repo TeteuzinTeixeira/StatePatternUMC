@@ -1,5 +1,10 @@
 class EstadoConcretoPendente : Estado
 {
+    public void EscolhaNoEstadoPendente(Contexto contexto)
+    {
+        contexto.ShowMenu();
+    }
+
     public override void Handle1()
     {
         Console.WriteLine("EstadoConcretoPendente capta a primeira requisição");
@@ -14,7 +19,7 @@ class EstadoConcretoPendente : Estado
         this._context.TransitionTo(new EstadoConcretoErro());
     }
 
-    public void Handle3()
+    public override void Handle3()
     {
         Console.WriteLine("EstadoConcretoPendente capta a terceira requisição");
         Console.WriteLine("EstadoConcretoPendente deseja mudar o estado do contexto");

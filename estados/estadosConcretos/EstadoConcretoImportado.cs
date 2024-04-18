@@ -11,4 +11,9 @@ class EstadoConcretoImportado : Estado
     {
         Console.WriteLine("EstadoConcretoImportado capta a segunda requisição");
     }
+    
+    public override void Handle3()
+    {
+        Console.WriteLine("EstadoConcretoImportado capta a terceira requisição");
+    }
 }

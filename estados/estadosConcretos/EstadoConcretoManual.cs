@@ -9,4 +9,9 @@ class EstadoConcretoManual : Estado
     {
         Console.WriteLine("EstadoConcretoManual capta a segunda requisição");
     }
+    
+    public override void Handle3()
+    {
+        Console.WriteLine("EstadoConcretoManual capta a terceira requisição");
+    }
 }

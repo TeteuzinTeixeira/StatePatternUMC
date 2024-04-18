@@ -11,4 +11,9 @@ class EstadoConcretoErro : Estado
     {
         Console.WriteLine("EstadoConcretoErro capta a segunda requisição");
     }
+    
+    public override void Handle3()
+    {
+        Console.WriteLine("EstadoConcretoErro capta a terceira requisição");
+    }
 }

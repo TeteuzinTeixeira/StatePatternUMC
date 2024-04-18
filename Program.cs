@@ -2,8 +2,7 @@
 {
     static void Main(string[] args)
     {
-        var context = new Contexto(new EstadoConcretoInicial());
-        context.Request1();
-        context.Request2();
+        var context = new Contexto(new EstadoConcretoPendente());
+        context.ShowMenu();
     }
 }

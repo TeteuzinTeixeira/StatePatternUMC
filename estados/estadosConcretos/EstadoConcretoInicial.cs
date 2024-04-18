@@ -11,4 +11,9 @@ class EstadoConcretoInicial : Estado
     {
         Console.WriteLine("EstadoConcretoInicial capta a segunda requisição");
     }
+    
+    public override void Handle3()
+    {
+        Console.WriteLine("EstadoConcretoInicial capta a terceira requisição");
+    }
 }
